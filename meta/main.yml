@@ -1,6 +1,7 @@
 galaxy_info:
   role_name: php
   author: youyo
+  company: heptagon inc.
   description: install php
   license: MIT
   min_ansible_version: 2.4
