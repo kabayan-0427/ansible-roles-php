@@ -18,6 +18,8 @@
 
 - name: Build php
   command: "{{ phpbuild_root }}/bin/php-build {{ version }} {{ php_dir }}/{{ version }}"
+  environment:
+    PHP_BUILD_EXTRA_MAKE_ARGUMENTS: "{{ PHP_BUILD_EXTRA_MAKE_ARGUMENTS }}"
   when: not specific_version_php.stat.exists
 
 - name: Set timezone

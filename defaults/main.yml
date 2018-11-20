@@ -3,3 +3,4 @@ version: 7.2.9
 php_dir: /usr/local/php
 phpbuild_root: /usr/local/php-build
 timezone: Asia/Tokyo
+PHP_BUILD_EXTRA_MAKE_ARGUMENTS: '-j2'
